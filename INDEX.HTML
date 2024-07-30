@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies and Finance Facts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hobbies and Finance Facts</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Add a New Fact</h2>
+            <form id="factForm">
+                <label for="factCategory">Category:</label>
+                <select id="factCategory" required>
+                    <option value="hobby">Hobby</option>
+                    <option value="finance">Finance</option>
+                </select>
+                <label for="factText">Fact:</label>
+                <textarea id="factText" rows="4" required></textarea>
+                <label for="factImage">Image (optional):</label>
+                <input type="file" id="factImage" accept="image/*">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="content-container">
+            <div class="box" id="hobbyFacts">
+                <h2>Hobby Facts</h2>
+            </div>
+            <div class="box" id="financeFacts">
+                <h2>Finance Facts</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hobbies and Finance Facts</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
